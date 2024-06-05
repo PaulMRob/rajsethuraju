@@ -732,6 +732,115 @@ body.login {
   opacity: 0;
 }
 
+.site-header {
+  z-index: 3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 20px 0;
+}
+.site-header__avatar {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.site-header__avatar img {
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+.site-header__menu {
+  visibility: hidden;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.89);
+  left: 0;
+  right: 0;
+  top: -20px;
+  padding-top: 58px;
+  opacity: 0;
+  transform: translateY(-20%);
+  transition: opacity 0.3s ease-out, visibility 0.3s ease-out, transform 0.3s ease-out;
+  padding-bottom: 20px;
+}
+.site-header__menu--active {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+}
+@media (min-width: 960px) {
+  .site-header__menu {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    position: static;
+    background-color: transparent;
+    float: right;
+    padding-top: 0;
+    padding-bottom: 0;
+    top: 0;
+  }
+}
+.site-header__search-trigger {
+  cursor: pointer;
+  color: #fff;
+  font-size: 1.2rem;
+  position: absolute;
+  top: 6px;
+  right: 16px;
+}
+@media (min-width: 530px) {
+  .site-header__search-trigger {
+    top: 4px;
+    font-size: 1.4rem;
+  }
+}
+@media (min-width: 960px) {
+  .site-header__search-trigger {
+    display: none;
+  }
+}
+.site-header__menu-trigger {
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.2rem;
+  position: absolute;
+  z-index: 10;
+  top: 7px;
+  right: 46px;
+}
+@media (min-width: 530px) {
+  .site-header__menu-trigger {
+    top: 5px;
+    font-size: 1.4rem;
+  }
+}
+@media (min-width: 960px) {
+  .site-header__menu-trigger {
+    display: none;
+  }
+}
+.site-header__util {
+  padding: 0 0 0 20px;
+}
+@media (min-width: 960px) {
+  .site-header__util {
+    padding: 0;
+    float: right;
+  }
+}
+.site-header__btn {
+  margin-right: 20px;
+}
+@media (min-width: 960px) {
+  .site-header__btn {
+    float: left;
+  }
+}
+.site-header .btn--with-photo {
+  margin-right: 0;
+}
+
 .site-footer {
   padding: 2rem 0 3.5rem 0;
   background-image: linear-gradient(#fff, #ececec);
@@ -884,7 +993,7 @@ body.login {
 .page-banner__bg-image {
   opacity: 0.33;
   background-size: cover;
-  background-position: center;
+  position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
