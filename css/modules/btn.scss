@@ -37,11 +37,11 @@
     background: linear-gradient($darkOrange, scale-color($darkOrange, $lightness: -35%, $saturation: 100%));
   }
 
-  &--blue {
+  &--black {
     background-color: $mainBlack;
   }
 
-  &--blue:hover {
+  &--black:hover {
     background: linear-gradient(scale-color($mainBlack, $lightness: 11%), $mainBlack);
   }
 

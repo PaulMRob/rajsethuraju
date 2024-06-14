@@ -528,25 +528,25 @@ body.login {
 .btn--dark-orange:hover {
   background: linear-gradient(#F95738, #c62000);
 }
-.btn--blue {
+.btn--black {
   background-color: #000000;
 }
-.btn--blue:hover {
+.btn--black:hover {
   background: linear-gradient(#1c1c1c, #000000);
 }
 .btn--yellow {
-  background-color: #F4D35E;
+  background-color: #f6ca2c;
   text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.22);
 }
 .btn--yellow:hover {
-  background: linear-gradient(#F4D35E, #f0bb00);
+  background: linear-gradient(#f6ca2c, #cea100);
 }
 .btn--beige {
   background-color: #ffffff;
   color: #173f58;
 }
 .btn--beige:hover {
-  background-color: #F4D35E;
+  background-color: #f6ca2c;
 }
 .btn--gray {
   background-color: #222;
@@ -739,6 +739,7 @@ body.login {
   right: 0;
   left: 0;
   padding: 20px 0;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 .site-header__avatar {
   position: absolute;
@@ -751,6 +752,8 @@ body.login {
   height: 30px;
 }
 .site-header__menu {
+  display: flex;
+  justify-content: center;
   visibility: hidden;
   position: absolute;
   background-color: rgba(0, 0, 0, 0.89);
@@ -775,7 +778,6 @@ body.login {
     transform: translateY(0) scale(1);
     position: static;
     background-color: transparent;
-    float: left;
     padding-top: 0;
     padding-bottom: 0;
     top: 0;
@@ -829,6 +831,16 @@ body.login {
     float: left;
   }
 }
+.site-header__logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.site-header__logo-container img {
+  width: 60%;
+  height: auto;
+}
 .site-header__btn {
   margin-left: 20px;
 }
@@ -843,7 +855,7 @@ body.login {
 
 .site-footer {
   padding: 2rem 0 3.5rem 0;
-  background-image: linear-gradient(#fff, #ececec);
+  background-color: black;
 }
 .site-footer p {
   font-size: 0.9rem;
@@ -976,6 +988,7 @@ body.login {
 }
 .page-banner__content {
   position: relative;
+  margin: 3rem;
   z-index: 2;
 }
 .page-banner__title {
@@ -991,8 +1004,8 @@ body.login {
   }
 }
 .page-banner__bg-image {
-  opacity: 0.33;
   background-size: cover;
+  background-position: center 50%;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -1435,6 +1448,8 @@ body.admin-bar .search-overlay {
 }
 
 .event-summary {
+  display: flex;
+  align-items: center;
   position: relative;
   padding-right: 107px;
   min-height: 77px;
@@ -1445,6 +1460,7 @@ body.admin-bar .search-overlay {
   color: #173f58;
 }
 .event-summary__date {
+  margin-left: 10px;
   text-decoration: none;
   display: block;
   top: 0;
@@ -1463,7 +1479,7 @@ body.admin-bar .search-overlay {
   opacity: 0.75;
 }
 .event-summary__date--beige {
-  background-color: #F4D35E;
+  background-color: #f6ca2c;
 }
 .event-summary__month {
   display: block;

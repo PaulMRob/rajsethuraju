@@ -5,6 +5,7 @@
   left: 0;
   right: 0;
   padding: 20px 0;
+  background-color: rgba(0, 0, 0, 0.4);
 
   &__avatar {
     position: absolute;
@@ -19,6 +20,8 @@
   }
 
   &__menu {
+    display: flex;
+    justify-content: center;
     visibility: hidden;
     position: absolute;
     background-color: adjust-color($mainBlack, $alpha: -0.11, $lightness: -1%);
@@ -43,7 +46,6 @@
       transform: translateY(0) scale(1);
       position: static;
       background-color: transparent;
-      float: right;
       padding-top: 0;
       padding-bottom: 0;
       top: 0;
@@ -93,6 +95,18 @@
     @include atMedium {
       padding: 0;
       float: right;
+    }
+  }
+
+  &__logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+    img {
+      width: 60%;
+      height: auto;
     }
   }
 

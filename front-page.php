@@ -33,7 +33,7 @@
             $homepageEvents->the_post(); ?>
             
             <!-- EVENT LIST -->
-            <div class="event-summary-fp">
+            <div class="event-summary">
               <a class="event-summary__date t-center" href="<?php the_permalink(); ?>">
                 <span class="event-summary__month"><?php
                 $eventDate = new DateTime(get_field('event_date'));
@@ -56,7 +56,9 @@
 
           <?php } ?>
 
-        <p class="t-center no-margin"><a href="<?php echo get_post_type_archive_link('event'); ?>" class="btn btn--black">View All Events</a></p>
+        <p class="t-center no-margin">
+          <a href="<?php echo get_post_type_archive_link('event'); ?>" class="btn btn--black">View All Events</a>
+        </p>
       </div>
     </div>
 

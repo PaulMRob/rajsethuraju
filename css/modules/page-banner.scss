@@ -8,6 +8,7 @@
 
   &__content {
     position: relative;
+    margin: 3rem;;
     z-index: 2;
   }
 
@@ -23,8 +24,9 @@
   }
 
   &__bg-image {
-    opacity: 0.33;
+    
     background-size: cover;
+    background-position: center 50%;
     position: absolute;
     top: 0;
     bottom: 0;

@@ -25,7 +25,7 @@
         </nav>
         
       </div>
-      <div class="site-header_logo-container">
+      <div class="site-header__logo-container">
       <a href="<?php echo site_url('/') ?>"><img src="<?php echo get_theme_file_uri('images/logo_white.png') ?>" alt=""></a>          
       </div>
     </div>

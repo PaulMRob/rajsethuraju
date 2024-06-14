@@ -1,4 +1,6 @@
 .event-summary {
+  display: flex;
+  align-items: center;
   position: relative;
   padding-left: 107px;
   min-height: 77px;
@@ -10,6 +12,7 @@
   }
 
   &__date {
+    margin-right: 10px;
     text-decoration: none;
     display: block;
     top: 0;
