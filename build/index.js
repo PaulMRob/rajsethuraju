@@ -198,35 +198,111 @@ __webpack_require__.r(__webpack_exports__);
 class Search {
   // 1. describe and create our object
   constructor() {
+    this.addSearchBox();
+    this.resultsDiv = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.search-overlay__results');
     this.openButton = jquery__WEBPACK_IMPORTED_MODULE_0___default()(".js-search-trigger");
     this.closeButton = jquery__WEBPACK_IMPORTED_MODULE_0___default()(".search-overlay__close");
     this.searchOverlay = jquery__WEBPACK_IMPORTED_MODULE_0___default()(".search-overlay");
+    this.searchField = jquery__WEBPACK_IMPORTED_MODULE_0___default()("#search-term");
     this.events();
+    this.isOverlayOpen = false;
+    this.isSpinnerVisible = false;
+    this.previousValue;
+    this.typingTimer;
   }
   // 2. events
   events() {
     this.openButton.on("click", this.openOverlay.bind(this));
     this.closeButton.on("click", this.closeOverlay.bind(this));
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).on("keyup", this.keyPressDispatcher.bind(this));
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).on("keydown", this.keyPressDispatcher.bind(this));
+    this.searchField.on("keyup", this.typingLogic.bind(this));
   }
 
   // 3. methods (function... action)
+  typingLogic() {
+    if (this.searchField.val() != this.previousValue) {
+      clearTimeout(this.typingTimer);
+      if (this.searchField.val()) {
+        if (!this.isSpinnerVisible) {
+          this.resultsDiv.html('<div class="spinner-loader"></div>');
+          this.isSpinnerVisible = true;
+        }
+        this.typingTimer = setTimeout(this.getResults.bind(this), 750);
+      } else {
+        this.resultsDiv.html('');
+        this.isSpinnerVisible = false;
+      }
+    }
+    this.previousValue = this.searchField.val();
+  }
+  getResults() {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default().getJSON(rajData.root_url + '/wp-json/drraj/v1/search?term=' + this.searchField.val(), results => {
+      this.resultsDiv.html(`
+        <div class="row">
+          <div class="one-third">
+            <h2 class="search-overlay__section-title">General Info</h2>
+            ${results.generalInfo.length ? '<ul class="link-list min-list">' : '<p>No results match your search :(</p>'}
+              ${results.generalInfo.map(item => `<li><a href="${item.permalink}">${item.title}</a> ${item.type == "post" ? `by ${item.authorName}` : ""}</li>`).join('')}
+            ${results.generalInfo.length ? '</ul>' : ''}
+          </div>
+          <div class="one-third">
+            <h2 class="search-overlay__section-title">Events</h2>
+            ${results.events.length ? '<ul class="link-list min-list">' : `<p>No event results. <a href="${rajData.root_url}/events">View all Events</a></p>`}
+              ${results.events.map(item => `
+                
+              `).join('')}
+            ${results.events.length ? '</ul>' : ''}
+          </div>
+          <div class="one-third">
+            <h2 class="search-overlay__section-title">Rubrics</h2>
+            ${results.rubrics.length ? '<ul class="link-list min-list">' : `<p>No rubric results. <a href="${rajData.root_url}/rubric">View all Rubrics</a></p>`}
+              ${results.rubrics.map(item => `<li><a href="${item.permalink}">${item.title}</a></li>`).join('')}
+            ${results.rubrics.length ? '</ul>' : ''}
+            <h2 class="search-overlay__section-title">News</h2>
+            ${results.news.length ? '<ul class="link-list min-list">' : `<p>No news results. <a href="${rajData.root_url}/news>View all News</a></p>`}
+              ${results.news.map(item => `<li><a href="${item.permalink}">${item.title}</a></li>`).join('')}
+            ${results.news.length ? '</ul>' : ''}
+          </div>
+      `);
+      this.isSpinnerVisible = false;
+    });
+  }
+  keyPressDispatcher(e) {
+    if (e.keyCode == 83 && !this.isOverlayOpen && !jquery__WEBPACK_IMPORTED_MODULE_0___default()("input, textarea").is(':focus')) {
+      this.openOverlay();
+    }
+    if (e.keyCode == 27 && this.isOverlayOpen) {
+      this.closeOverlay();
+    }
+  }
   openOverlay() {
     this.searchOverlay.addClass("search-overlay--active");
     jquery__WEBPACK_IMPORTED_MODULE_0___default()("body").addClass("body-no-scroll");
+    this.searchField.val('');
+    setTimeout(() => this.searchField.focus(), 301);
+    this.isOverlayOpen = true;
   }
   closeOverlay() {
     this.searchOverlay.removeClass("search-overlay--active");
     jquery__WEBPACK_IMPORTED_MODULE_0___default()("body").removeClass("body-no-scroll");
+    this.isOverlayOpen = false;
   }
-  keyPressDispatcher(e) {
-    console.log(e.keyCode);
-    if (e.keyCode == 83) {
-      this.openOverlay();
-    }
-    if (e.keyCode == 27) {
-      this.closeOverlay();
-    }
+  addSearchBox() {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()("body").append(`
+    <div class="search-overlay">
+      <div class="search-overlay__top">
+        <div class="container">
+          <i class="fa fa-search search-overlay__icon" aria-hidden="true"></i>
+          <input type="text" class="search-term" placeholder="Search my entire site" id="search-term">
+          <i class="fa fa-window-close search-overlay__close" aria-hidden="true"></i>
+        </div>
+        <div class="container">
+          <div class="search-overlay__results">
+          </div>
+        </div>
+      </div>
+    </div>
+    `);
   }
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Search);
