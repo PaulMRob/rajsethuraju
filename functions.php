@@ -2,6 +2,43 @@
 
 require get_theme_file_path('/inc/search-route.php');
 
+function drraj_custom_rest() {
+    register_rest_field('post', 'authorName', array(
+        'get_callback' => function() {return get_the_author();}
+    ));
+}
+
+add_action('rest_api_init', 'drraj_custom_rest');
+
+function pageBanner($args = NULL) {
+    if(!isset($args['title'])) {
+        $args['title'] = get_the_title();
+    }
+
+    if(!isset($args['subtitle'])) {
+        $args['subtitle'] = get_field('page_banner_subtitle');
+    }
+
+    if (!isset($args['photo'])) {
+        if (get_field('page_banner_background_image') AND !is_archive() AND !is_home() ) {
+            $args['photo'] = get_field('page_banner_background_image')['sizes']['pageBanner'];
+        } else {
+            $args['photo'] = get_theme_file_uri('/images/news-banner-h.png');
+        }
+    }
+    ?>
+    <div class="page-banner">
+      <div class="page-banner__bg-image" style="background-image: url(<?php echo $args['photo']; ?>);"></div>
+      <div class="page-banner__content container container--narrow">
+        <h1 class="page-banner__title"><?php echo $args['title']; ?></h1>
+        <div class="page-banner__intro">
+          <p><?php echo $args['subtitle']; ?></p>
+        </div>
+      </div>  
+    </div>
+    <?php
+}
+
 function raj_files() {
     wp_enqueue_script('main-raj-js', get_theme_file_uri('/build/index.js'), array('jquery'), '1.0', true);
     wp_enqueue_style('custom-google-fonts', '//fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
@@ -22,10 +59,9 @@ function raj_features() {
 // ADDING DYNAMIC MENU
     // register_nav_menu('headerMenuLocation', 'Header Menu Location');
 
-// ADDING PAGE TITLE TO BROWSER TAB
     add_theme_support('title-tag');
-// ADDING FEATURED IMAGES
     add_theme_support('post-thumbnails');
+    add_image_size('pageBanner', 1500, 550, true);
 
 // ADDING CUSTOM LOGO SUPPORT    
     add_theme_support(
