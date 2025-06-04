@@ -1,4 +1,7 @@
 import "../css/style.scss"
+import "@glidejs/glide/dist/css/glide.core.min.css"
+// Optional: for default arrows, bullets styling
+import "@glidejs/glide/dist/css/glide.theme.min.css"
 
 // Our modules / classes
 import MobileMenu from "./modules/MobileMenu"

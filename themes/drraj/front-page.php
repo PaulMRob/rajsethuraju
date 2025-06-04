@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
   <div class="page-banner">
-  <div class="page-banner__bg-image" style="background-image: url(<?php echo get_theme_file_uri('images/hero-raj.jpg') ?>)"></div>
+  <div class="page-banner__bg-image" style="background-image: url(<?php echo get_theme_file_uri('images/posterized-raj.png') ?>)"></div>
     <div class="page-banner__content c-white">
       <h1 class="headline headline--large ">dr <br> <strong>raj</strong><br> sethuraju</h1> 
       <h3 class="headline headline--small">Associate Professor of Criminal Justice, Activist, Community Leader</h3>
@@ -94,10 +94,10 @@
     </div>
   </div>
 
-  <div class="hero-slider">
+  <div class="hero-slider glide">
     <div data-glide-el="track" class="glide__track">
       <div class="glide__slides">
-        <div class="hero-slider__slide" style="background-image: url(<?php echo get_theme_file_uri('images/consulting.png;') ?>)">
+        <div class="hero-slider__slide" style="background-image: url(<?php echo get_theme_file_uri('images/consulting.png') ?>)">
           <div class="hero-slider__interior container">
             <div class="hero-slider__overlay">
               <h2 class="headline headline--medium t-center">Consulting</h2>
