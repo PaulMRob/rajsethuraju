@@ -1,3 +1,5 @@
+@use "../base/variables" as v;
+
 .event-summary {
   display: flex;
   align-items: center;
@@ -21,7 +23,7 @@
     padding: 14px 0 11px 0;
     color: #FFF;
     border-radius: 50%;
-    background-color: $mainBlack;
+    background-color: v.$mainBlack;
     width: 80px;
     line-height: 1;
     transition: opacity .33s;
@@ -33,7 +35,7 @@
   }
 
   &__date--beige {
-    background-color: $mainYellow;
+    background-color: v.$mainYellow;
   }
 
   &__month {

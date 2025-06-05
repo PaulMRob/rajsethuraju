@@ -1,3 +1,6 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+
 .site-header {
   z-index: 3;
   position: absolute;
@@ -24,7 +27,7 @@
     justify-content: center;
     visibility: hidden;
     position: absolute;
-    background-color: adjust-color($mainBlack, $alpha: -0.11, $lightness: -1%);
+    background-color: adjust-color(v.$mainBlack, $alpha: -0.11, $lightness: -1%);
     left: 0;
     right: 0;
     top: -20px;
@@ -40,7 +43,7 @@
       visibility: visible;
     }
 
-    @include atMedium {
+    @include m.atMedium {
       visibility: visible;
       opacity: 1;
       transform: translateY(0) scale(1);
@@ -60,12 +63,12 @@
     top: 6px;
     right: 16px;
 
-    @include atSmall {
+    @include m.atSmall {
       top: 4px;
       font-size: 1.4rem;
     }
 
-    @include atMedium {
+    @include m.atMedium {
       display: none;
     }
   }
@@ -79,12 +82,12 @@
     top: 7px;
     right: 46px;
 
-    @include atSmall {
+    @include m.atSmall {
       top: 5px;
       font-size: 1.4rem;
     }
 
-    @include atMedium {
+    @include m.atMedium {
       display: none;
     }
   }
@@ -92,7 +95,7 @@
   &__util {
     padding: 0 0 0 20px;
 
-    @include atMedium {
+    @include m.atMedium {
       padding: 0;
       float: right;
     }
@@ -112,7 +115,7 @@
 
   &__btn {
     margin-right: 20px;
-    @include atMedium {
+    @include m.atMedium {
       float: left;
     }
   }

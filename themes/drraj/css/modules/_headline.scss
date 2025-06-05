@@ -1,3 +1,6 @@
+@use "../base/mixins" as m;
+@use "../base/variables" as v;
+
 .headline {
   margin: 0;
   font-family: "Roboto Condensed", sans-serif;
@@ -5,7 +8,7 @@
 
   &--large {
     font-size: 3.6rem;
-    @include atSmall {
+    @include m.atSmall {
       font-size: 6.25rem;
     }
   }
@@ -18,7 +21,7 @@
   &--medium {
     font-size: 1.9rem;
     margin-bottom: 0.75rem;
-    @include atSmall {
+    @include m.atSmall {
       font-size: 3.125rem;
     }
   }
@@ -33,7 +36,7 @@
   &--small {
     font-size: 1.2rem;
     margin-bottom: 1.9rem;
-    @include atSmall {
+    @include m.atSmall {
       font-size: 1.6875rem;
     }
   }
@@ -49,7 +52,7 @@
   }
 
   &--post-title a {
-    color: $mainBlack;
+    color: v.$mainBlack;
     text-decoration: none;
   }
 

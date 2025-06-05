@@ -1,3 +1,5 @@
+@use "../base/mixins" as m;
+
 .hero-slider {
   position: relative;
 
@@ -10,7 +12,7 @@
     padding-top: 60px;
     padding-bottom: 60px;
 
-    @include atMedium {
+    @include m.atMedium {
       padding-top: 130px;
       padding-bottom: 130px;
     }
@@ -26,7 +28,7 @@
     background-color: rgba(0, 0, 0, 0.68);
     padding: 40px;
     color: #fff;
-    @include atMedium {
+    @include m.atMedium {
       width: 50%;
     }
   }
@@ -41,7 +43,7 @@
   margin: 0;
   text-align: center;
   top: 15px;
-  @include atMedium {
+  @include m.atMedium {
     top: 50px;
   }
 }
@@ -85,7 +87,7 @@
   margin: 0;
   text-align: center;
   top: 15px;
-  @include atMedium {
+  @include m.atMedium {
     top: 50px;
   }
 

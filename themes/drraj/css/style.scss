@@ -1,6 +1,6 @@
 /* 3rd Party CSS (can be left as-is or converted to npm imports if needed) */
-@import "normalize.css";
-@import "../node_modules/@glidejs/glide/dist/css/glide.core.min.css";
+@use "normalize.css";
+@use "../node_modules/@glidejs/glide/dist/css/glide.core.min.css";
 
 /* Global Styles and Mixins */
 @use "base/variables";

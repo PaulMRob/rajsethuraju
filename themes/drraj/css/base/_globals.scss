@@ -1,4 +1,4 @@
-@use "variables";
+@use "variables" as v;
 
 body {
     color: #333;
@@ -13,7 +13,7 @@ body {
   }
   
   a {
-    color: $mainBlack;
+    color: v.$mainBlack;
   }
   
   a:hover {

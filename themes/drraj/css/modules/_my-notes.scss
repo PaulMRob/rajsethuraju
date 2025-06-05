@@ -1,3 +1,5 @@
+@use "../base/variables" as v;
+
 /* My Notes */
 .edit-note,
 .delete-note,
@@ -14,12 +16,12 @@
 .submit-note {
   color: #fff;
   border: none;
-  background-color: $darkOrange;
+  background-color: v.$darkOrange;
   line-height: 1.65;
 }
 
 .submit-note:hover {
-  background-color: adjust-color($darkOrange, $lightness: -10%, $saturation: -20%);
+  background-color: adjust-color(v.$darkOrange, $lightness: -10%, $saturation: -20%);
 }
 
 .edit-note,
@@ -52,7 +54,7 @@
   font-size: 1.85rem;
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 300;
-  color: $mainBlack;
+  color: v.$mainBlack;
   border: 1px solid transparent;
   padding: 7px;
   outline: none;

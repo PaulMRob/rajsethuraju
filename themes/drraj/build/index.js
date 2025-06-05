@@ -1,13 +1,16 @@
 /******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./css/style.scss":
 /*!************************!*\
   !*** ./css/style.scss ***!
   \************************/
-/***/ (() => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-throw new Error("Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):\nHookWebpackError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\n@use rules must be written before any other rules.\n\u001b[34m  ╷\u001b[0m\n\u001b[34m7 │\u001b[0m \u001b[31m@use \"base/variables\"\u001b[0m;\n\u001b[34m  │\u001b[0m \u001b[31m^^^^^^^^^^^^^^^^^^^^^\u001b[0m\n\u001b[34m  ╵\u001b[0m\n  css/style.scss 7:1  root stylesheet\n    at tryRunOrWebpackError (/Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/webpack/lib/HookWebpackError.js:86:9)\n    at __webpack_require_module__ (/Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/webpack/lib/Compilation.js:5464:12)\n    at __webpack_require__ (/Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/webpack/lib/Compilation.js:5411:18)\n    at /Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/webpack/lib/Compilation.js:5498:20\n    at symbolIterator (/Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/neo-async/async.js:3485:9)\n    at done (/Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/neo-async/async.js:3527:9)\n    at Hook.eval [as callAsync] (eval at create (/Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:15:1)\n    at Hook.CALL_ASYNC_DELEGATE [as _callAsync] (/Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/tapable/lib/Hook.js:18:14)\n    at /Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/webpack/lib/Compilation.js:5386:43\n    at symbolIterator (/Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/neo-async/async.js:3482:9)\n    at timesSync (/Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/neo-async/async.js:2297:7)\n    at Object.eachLimit (/Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/neo-async/async.js:3463:5)\n    at /Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/webpack/lib/Compilation.js:5348:16\n    at symbolIterator (/Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/neo-async/async.js:3485:9)\n    at timesSync (/Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/neo-async/async.js:2297:7)\n    at Object.eachLimit (/Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/neo-async/async.js:3463:5)\n    at /Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/webpack/lib/Compilation.js:5316:15\n    at symbolIterator (/Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/neo-async/async.js:3485:9)\n    at done (/Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/neo-async/async.js:3527:9)\n    at /Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/webpack/lib/Compilation.js:5262:8\n    at /Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/webpack/lib/Compilation.js:3677:6\n    at /Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/webpack/lib/HookWebpackError.js:67:2\n    at Hook.eval [as callAsync] (eval at create (/Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:15:1)\n    at Cache.store (/Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/webpack/lib/Cache.js:113:20)\n    at ItemCacheFacade.store (/Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/webpack/lib/CacheFacade.js:142:15)\n    at /Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/webpack/lib/Compilation.js:3676:11\n    at /Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/webpack/lib/Cache.js:99:5\n    at Hook.eval [as callAsync] (eval at create (/Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:16:1)\n    at Cache.get (/Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/webpack/lib/Cache.js:81:18)\n    at ItemCacheFacade.get (/Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/webpack/lib/CacheFacade.js:116:15)\n    at Compilation._codeGenerationModule (/Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/webpack/lib/Compilation.js:3644:9)\n    at codeGen (/Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/webpack/lib/Compilation.js:5250:11)\n    at symbolIterator (/Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/neo-async/async.js:3482:9)\n    at timesSync (/Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/neo-async/async.js:2297:7)\n    at Object.eachLimit (/Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/neo-async/async.js:3463:5)\n    at /Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/webpack/lib/Compilation.js:5280:14\n    at processQueue (/Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/webpack/lib/util/processAsyncTree.js:61:4)\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)\n-- inner error --\nError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\n@use rules must be written before any other rules.\n\u001b[34m  ╷\u001b[0m\n\u001b[34m7 │\u001b[0m \u001b[31m@use \"base/variables\"\u001b[0m;\n\u001b[34m  │\u001b[0m \u001b[31m^^^^^^^^^^^^^^^^^^^^^\u001b[0m\n\u001b[34m  ╵\u001b[0m\n  css/style.scss 7:1  root stylesheet\n    at Object.<anonymous> (/Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!/Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!/Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!/Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/css/style.scss:1:7)\n    at /Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/webpack/lib/javascript/JavascriptModulesPlugin.js:518:10\n    at Hook.eval [as call] (eval at create (/Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/tapable/lib/HookCodeFactory.js:19:10), <anonymous>:7:1)\n    at Hook.CALL_DELEGATE [as _call] (/Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/tapable/lib/Hook.js:14:14)\n    at /Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/webpack/lib/Compilation.js:5466:39\n    at tryRunOrWebpackError (/Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/webpack/lib/HookWebpackError.js:81:7)\n    at __webpack_require_module__ (/Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/webpack/lib/Compilation.js:5464:12)\n    at __webpack_require__ (/Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/webpack/lib/Compilation.js:5411:18)\n    at /Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/webpack/lib/Compilation.js:5498:20\n    at symbolIterator (/Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/neo-async/async.js:3485:9)\n    at done (/Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/neo-async/async.js:3527:9)\n    at Hook.eval [as callAsync] (eval at create (/Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:15:1)\n    at Hook.CALL_ASYNC_DELEGATE [as _callAsync] (/Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/tapable/lib/Hook.js:18:14)\n    at /Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/webpack/lib/Compilation.js:5386:43\n    at symbolIterator (/Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/neo-async/async.js:3482:9)\n    at timesSync (/Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/neo-async/async.js:2297:7)\n    at Object.eachLimit (/Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/neo-async/async.js:3463:5)\n    at /Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/webpack/lib/Compilation.js:5348:16\n    at symbolIterator (/Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/neo-async/async.js:3485:9)\n    at timesSync (/Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/neo-async/async.js:2297:7)\n    at Object.eachLimit (/Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/neo-async/async.js:3463:5)\n    at /Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/webpack/lib/Compilation.js:5316:15\n    at symbolIterator (/Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/neo-async/async.js:3485:9)\n    at done (/Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/neo-async/async.js:3527:9)\n    at /Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/webpack/lib/Compilation.js:5262:8\n    at /Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/webpack/lib/Compilation.js:3677:6\n    at /Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/webpack/lib/HookWebpackError.js:67:2\n    at Hook.eval [as callAsync] (eval at create (/Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:15:1)\n    at Cache.store (/Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/webpack/lib/Cache.js:113:20)\n    at ItemCacheFacade.store (/Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/webpack/lib/CacheFacade.js:142:15)\n    at /Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/webpack/lib/Compilation.js:3676:11\n    at /Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/webpack/lib/Cache.js:99:5\n    at Hook.eval [as callAsync] (eval at create (/Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:16:1)\n    at Cache.get (/Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/webpack/lib/Cache.js:81:18)\n    at ItemCacheFacade.get (/Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/webpack/lib/CacheFacade.js:116:15)\n    at Compilation._codeGenerationModule (/Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/webpack/lib/Compilation.js:3644:9)\n    at codeGen (/Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/webpack/lib/Compilation.js:5250:11)\n    at symbolIterator (/Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/neo-async/async.js:3482:9)\n    at timesSync (/Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/neo-async/async.js:2297:7)\n    at Object.eachLimit (/Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/neo-async/async.js:3463:5)\n    at /Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/webpack/lib/Compilation.js:5280:14\n    at processQueue (/Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/webpack/lib/util/processAsyncTree.js:61:4)\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)\n\nGenerated code for /Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!/Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!/Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!/Users/paul/Local Sites/dr-raj-sethuraju/app/public/wp-content/themes/drraj/css/style.scss\n1 | throw new Error(\"Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\\n@use rules must be written before any other rules.\\n\\u001b[34m  ╷\\u001b[0m\\n\\u001b[34m7 │\\u001b[0m \\u001b[31m@use \\\"base/variables\\\"\\u001b[0m;\\n\\u001b[34m  │\\u001b[0m \\u001b[31m^^^^^^^^^^^^^^^^^^^^^\\u001b[0m\\n\\u001b[34m  ╵\\u001b[0m\\n  css/style.scss 7:1  root stylesheet\");");
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
 
 /***/ }),
 
@@ -17,7 +20,6 @@ throw new Error("Module build failed (from ./node_modules/mini-css-extract-plugi
   \*****************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
 
@@ -30,7 +32,6 @@ __webpack_require__.r(__webpack_exports__);
   \******************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
 
@@ -43,7 +44,6 @@ __webpack_require__.r(__webpack_exports__);
   \*******************************************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ Glide)
@@ -4030,13 +4030,42 @@ var Glide = /*#__PURE__*/function (_Core) {
 
 /***/ }),
 
+/***/ "./src/index.js":
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _css_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../css/style.scss */ "./css/style.scss");
+/* harmony import */ var _glidejs_glide_dist_css_glide_core_min_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @glidejs/glide/dist/css/glide.core.min.css */ "./node_modules/@glidejs/glide/dist/css/glide.core.min.css");
+/* harmony import */ var _glidejs_glide_dist_css_glide_theme_min_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @glidejs/glide/dist/css/glide.theme.min.css */ "./node_modules/@glidejs/glide/dist/css/glide.theme.min.css");
+/* harmony import */ var _modules_MobileMenu__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/MobileMenu */ "./src/modules/MobileMenu.js");
+/* harmony import */ var _modules_HeroSlider__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/HeroSlider */ "./src/modules/HeroSlider.js");
+/* harmony import */ var _modules_Search__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/Search */ "./src/modules/Search.js");
+
+
+// Optional: for default arrows, bullets styling
+
+
+// Our modules / classes
+
+
+
+
+// Instantiate a new object using our modules/classes
+const mobileMenu = new _modules_MobileMenu__WEBPACK_IMPORTED_MODULE_3__["default"]();
+const heroSlider = new _modules_HeroSlider__WEBPACK_IMPORTED_MODULE_4__["default"]();
+const search = new _modules_Search__WEBPACK_IMPORTED_MODULE_5__["default"]();
+
+/***/ }),
+
 /***/ "./src/modules/HeroSlider.js":
 /*!***********************************!*\
   !*** ./src/modules/HeroSlider.js ***!
   \***********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -4078,7 +4107,6 @@ class HeroSlider {
   \***********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -4108,7 +4136,6 @@ class MobileMenu {
   \*******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -4247,7 +4274,6 @@ class Search {
   \*************************/
 /***/ ((module) => {
 
-"use strict";
 module.exports = window["jQuery"];
 
 /***/ })
@@ -4278,7 +4304,42 @@ module.exports = window["jQuery"];
 /******/ 		return module.exports;
 /******/ 	}
 /******/ 	
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = __webpack_modules__;
+/******/ 	
 /************************************************************************/
+/******/ 	/* webpack/runtime/chunk loaded */
+/******/ 	(() => {
+/******/ 		var deferred = [];
+/******/ 		__webpack_require__.O = (result, chunkIds, fn, priority) => {
+/******/ 			if(chunkIds) {
+/******/ 				priority = priority || 0;
+/******/ 				for(var i = deferred.length; i > 0 && deferred[i - 1][2] > priority; i--) deferred[i] = deferred[i - 1];
+/******/ 				deferred[i] = [chunkIds, fn, priority];
+/******/ 				return;
+/******/ 			}
+/******/ 			var notFulfilled = Infinity;
+/******/ 			for (var i = 0; i < deferred.length; i++) {
+/******/ 				var [chunkIds, fn, priority] = deferred[i];
+/******/ 				var fulfilled = true;
+/******/ 				for (var j = 0; j < chunkIds.length; j++) {
+/******/ 					if ((priority & 1 === 0 || notFulfilled >= priority) && Object.keys(__webpack_require__.O).every((key) => (__webpack_require__.O[key](chunkIds[j])))) {
+/******/ 						chunkIds.splice(j--, 1);
+/******/ 					} else {
+/******/ 						fulfilled = false;
+/******/ 						if(priority < notFulfilled) notFulfilled = priority;
+/******/ 					}
+/******/ 				}
+/******/ 				if(fulfilled) {
+/******/ 					deferred.splice(i--, 1)
+/******/ 					var r = fn();
+/******/ 					if (r !== undefined) result = r;
+/******/ 				}
+/******/ 			}
+/******/ 			return result;
+/******/ 		};
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/compat get default export */
 /******/ 	(() => {
 /******/ 		// getDefaultExport function for compatibility with non-harmony modules
@@ -4319,37 +4380,68 @@ module.exports = window["jQuery"];
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/jsonp chunk loading */
+/******/ 	(() => {
+/******/ 		// no baseURI
+/******/ 		
+/******/ 		// object to store loaded and loading chunks
+/******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
+/******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
+/******/ 		var installedChunks = {
+/******/ 			"index": 0,
+/******/ 			"./style-index": 0
+/******/ 		};
+/******/ 		
+/******/ 		// no chunk on demand loading
+/******/ 		
+/******/ 		// no prefetching
+/******/ 		
+/******/ 		// no preloaded
+/******/ 		
+/******/ 		// no HMR
+/******/ 		
+/******/ 		// no HMR manifest
+/******/ 		
+/******/ 		__webpack_require__.O.j = (chunkId) => (installedChunks[chunkId] === 0);
+/******/ 		
+/******/ 		// install a JSONP callback for chunk loading
+/******/ 		var webpackJsonpCallback = (parentChunkLoadingFunction, data) => {
+/******/ 			var [chunkIds, moreModules, runtime] = data;
+/******/ 			// add "moreModules" to the modules object,
+/******/ 			// then flag all "chunkIds" as loaded and fire callback
+/******/ 			var moduleId, chunkId, i = 0;
+/******/ 			if(chunkIds.some((id) => (installedChunks[id] !== 0))) {
+/******/ 				for(moduleId in moreModules) {
+/******/ 					if(__webpack_require__.o(moreModules, moduleId)) {
+/******/ 						__webpack_require__.m[moduleId] = moreModules[moduleId];
+/******/ 					}
+/******/ 				}
+/******/ 				if(runtime) var result = runtime(__webpack_require__);
+/******/ 			}
+/******/ 			if(parentChunkLoadingFunction) parentChunkLoadingFunction(data);
+/******/ 			for(;i < chunkIds.length; i++) {
+/******/ 				chunkId = chunkIds[i];
+/******/ 				if(__webpack_require__.o(installedChunks, chunkId) && installedChunks[chunkId]) {
+/******/ 					installedChunks[chunkId][0]();
+/******/ 				}
+/******/ 				installedChunks[chunkId] = 0;
+/******/ 			}
+/******/ 			return __webpack_require__.O(result);
+/******/ 		}
+/******/ 		
+/******/ 		var chunkLoadingGlobal = globalThis["webpackChunkdrraj"] = globalThis["webpackChunkdrraj"] || [];
+/******/ 		chunkLoadingGlobal.forEach(webpackJsonpCallback.bind(null, 0));
+/******/ 		chunkLoadingGlobal.push = webpackJsonpCallback.bind(null, chunkLoadingGlobal.push.bind(chunkLoadingGlobal));
+/******/ 	})();
+/******/ 	
 /************************************************************************/
-var __webpack_exports__ = {};
-// This entry needs to be wrapped in an IIFE because it needs to be in strict mode.
-(() => {
-"use strict";
-/*!**********************!*\
-  !*** ./src/index.js ***!
-  \**********************/
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _css_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../css/style.scss */ "./css/style.scss");
-/* harmony import */ var _glidejs_glide_dist_css_glide_core_min_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @glidejs/glide/dist/css/glide.core.min.css */ "./node_modules/@glidejs/glide/dist/css/glide.core.min.css");
-/* harmony import */ var _glidejs_glide_dist_css_glide_theme_min_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @glidejs/glide/dist/css/glide.theme.min.css */ "./node_modules/@glidejs/glide/dist/css/glide.theme.min.css");
-/* harmony import */ var _modules_MobileMenu__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/MobileMenu */ "./src/modules/MobileMenu.js");
-/* harmony import */ var _modules_HeroSlider__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/HeroSlider */ "./src/modules/HeroSlider.js");
-/* harmony import */ var _modules_Search__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/Search */ "./src/modules/Search.js");
-
-
-// Optional: for default arrows, bullets styling
-
-
-// Our modules / classes
-
-
-
-
-// Instantiate a new object using our modules/classes
-const mobileMenu = new _modules_MobileMenu__WEBPACK_IMPORTED_MODULE_3__["default"]();
-const heroSlider = new _modules_HeroSlider__WEBPACK_IMPORTED_MODULE_4__["default"]();
-const search = new _modules_Search__WEBPACK_IMPORTED_MODULE_5__["default"]();
-})();
-
+/******/ 	
+/******/ 	// startup
+/******/ 	// Load entry module and return exports
+/******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["./style-index"], () => (__webpack_require__("./src/index.js")))
+/******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
+/******/ 	
 /******/ })()
 ;
 //# sourceMappingURL=index.js.map
