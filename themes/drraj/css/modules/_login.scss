@@ -1,0 +1,41 @@
+@use "../base/variables" as v;
+
+/* Customize Login Screen */
+
+body.login .button-primary {
+  background-color: v.$darkOrange;
+  border-color: #e04e2f; // approx. -10% lightness
+  text-shadow:
+    0 -1px 1px #cc3f20,
+    1px 0 1px #cc3f20,
+    0 1px 1px #cc3f20,
+    -1px 0 1px #cc3f20;
+  box-shadow: 0 1px 0 #b32f14; // approx. -20% lightness
+}
+
+body.login .button-primary:active,
+body.login .button-primary:focus,
+body.login .button-primary:hover {
+  background-color: #e25534; // approx. -9%
+  border-color: v.$darkOrange;
+  text-shadow:
+    0 -1px 1px #b32f14,
+    1px 0 1px #b32f14,
+    0 1px 1px #b32f14,
+    -1px 0 1px #b32f14;
+  box-shadow: 0 1px 0 #992711; // ~ -25%
+}
+
+body.login {
+  background-color: v.$beige;
+}
+
+.login h1 a {
+  color: v.$mainBlack;
+  font-size: 30px;
+  font-weight: 300;
+  background-image: none;
+  width: auto;
+  height: auto;
+  text-indent: 0;
+}

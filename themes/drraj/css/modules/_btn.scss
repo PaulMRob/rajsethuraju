@@ -1,3 +1,6 @@
+@use "../base/variables";
+@use "../base/baseline" as *;
+
 .btn {
   display: inline-block;
   cursor: pointer;
@@ -22,45 +25,57 @@
   }
 
   &--orange {
-    background-color: $lightOrange;
+    background-color: variables.$lightOrange;
   }
 
   &--orange:hover {
-    background: linear-gradient($lightOrange, scale-color($lightOrange, $lightness: -25%, $saturation: 100%));
+    background: linear-gradient(
+      variables.$lightOrange,
+      #cc6e2c // ~25% darker hardcoded fallback
+    );
   }
 
   &--dark-orange {
-    background-color: $darkOrange;
+    background-color: variables.$darkOrange;
   }
 
   &--dark-orange:hover {
-    background: linear-gradient($darkOrange, scale-color($darkOrange, $lightness: -35%, $saturation: 100%));
+    background: linear-gradient(
+      variables.$darkOrange,
+      #c7401f // ~35% darker hardcoded fallback
+    );
   }
 
   &--black {
-    background-color: $mainBlack;
+    background-color: variables.$mainBlack;
   }
 
   &--black:hover {
-    background: linear-gradient(scale-color($mainBlack, $lightness: 11%), $mainBlack);
+    background: linear-gradient(
+      #1a1a1a, // ~11% lighter fallback
+      variables.$mainBlack
+    );
   }
 
   &--yellow {
-    background-color: $mainYellow;
+    background-color: variables.$mainYellow;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.22);
   }
 
   &--yellow:hover {
-    background: linear-gradient($mainYellow, scale-color($mainYellow, $lightness: -29%, $saturation: 100%));
+    background: linear-gradient(
+      variables.$mainYellow,
+      #a67c00 // ~29% darker fallback
+    );
   }
 
   &--beige {
-    background-color: $beige;
+    background-color: variables.$beige;
     color: #173f58;
   }
 
   &--beige:hover {
-    background-color: $mainYellow;
+    background-color: variables.$mainYellow;
   }
 
   &--gray {
@@ -80,6 +95,7 @@
     font-size: 1.3rem;
     padding: 16px 34px;
     border-radius: 7px;
+
     @include atSmall {
       font-size: 1.9rem;
     }

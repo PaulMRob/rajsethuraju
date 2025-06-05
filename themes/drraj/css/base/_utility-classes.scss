@@ -1,3 +1,5 @@
+@use "mixins";
+
 .container {
   max-width: 1300px;
   margin: 0 auto;
@@ -34,7 +36,7 @@
   padding-bottom: 1.6rem;
 }
 
-@include atSmall {
+@include mixins.atSmall {
   .p-top-large {
     padding-top: 3.5rem;
   }
